@@ -17,6 +17,10 @@
     --bg:#4D4D4D;
     --border: .1rem solid #433e3ecd;
 }
+.wrapper{
+	height: 100%;
+	width: 100vh;
+}
 html{
     font-size: 62.5%;
     overflow: hidden;
@@ -54,7 +58,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 7%;
+    padding: 0.1rem 7%;
 	border-bottom: var(--border);
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -117,7 +121,7 @@ body {
 }
 .search-bar {
 	margin: auto;
-	padding: 1.5em;
+	padding: 1.3em;
 	justify-content: center;
 	max-width: 250px;
 }
@@ -207,16 +211,21 @@ body {
 
 
 
+.main .bigimg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid red;
+	height: 200px;
+	width: 500px;
+	background-repeat: no-repeat;
+	margin: 100px 170px;
 
-
-
-
-
-
-
-
-
-
+}
+.main .bigimg .merc{
+	height: 200px;
+	width: 500px;
+}
 
 
 
@@ -254,7 +263,7 @@ body {
 
 
 
-@media (max-width:768px){
+@media (max-width:950px){
 	#menu-btn{
 		display: inline-block;
 		
@@ -263,7 +272,7 @@ body {
 		position: absolute;
 		top: 100%; right: -100%;
 		background: #fff;
-		width: 30rem;
+		width: 16rem;
 		height: calc(100vh - 9.5rem);
 	}
 
