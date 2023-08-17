@@ -9,16 +9,16 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <a href="../index.html" class="logo">
+            <a href="../index.php" class="logo">
                 <img src="../img/logo.png" alt="logo">
             </a>
             <nav class="navbar">
 
-                <a href="./gibdd.html">ГИБДД</a> 
-                <a href="./test.html">Тест-драйвы</a> 
-                <a href="./dtp.html">ДТП</a> 
-                <a href="./pdd.html">ПДД</a> 
-                <a href="./shtraf.html">Штрафы</a>   
+                <a href="./gibdd.php">ГИБДД</a> 
+                <a href="./test.php">Тест-драйвы</a> 
+                <a href="./dtp.php">ДТП</a> 
+                <a href="./pdd.php">ПДД</a> 
+                <a href="./shtraf.php">Штрафы</a>   
 
             </nav>
             
@@ -40,6 +40,7 @@
             <h1 class="h1">&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135; Тест-драйвы &#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;</h1>
 
             <div class="news">
+              <a href="">
                 <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -60,7 +61,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -81,7 +83,9 @@
                       </div>
                     </div>
                   </article><br>
+                </a>
 
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -102,7 +106,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -123,7 +128,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -144,7 +150,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -165,7 +172,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -186,16 +194,18 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
+                    
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
-                  
+                
                     <div class="content">
                       <h1>News 8</h1>
                       <div class="infos">
                       <span>&nbsp;&nbsp;Data:&nbsp;&nbsp;&nbsp;3h12</span>
                     </div>
-                  
+                 
                   
                       <div class="icons">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -207,7 +217,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -228,7 +239,8 @@
                       </div>
                     </div>
                   </article><br>
-
+                </a>
+              <a href="#">
                   <article class="movie-card">
                     <img src="../img/мерс.jpg" alt="Avatar wallpaper" />
                   
@@ -245,11 +257,13 @@
                         </svg>
                   
 
-
                       </div>
                     </div>
                   </article><br>
+                </a>
             </div>
+
+          
         </main><br><br>
 
         <div class="footer-basic">
