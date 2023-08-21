@@ -211,24 +211,14 @@ body {
 
 
 
-.main .bigimg{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	height: 300px;
-	width: 800px;
-	background-repeat: no-repeat;
-	margin: 80px;
-	padding-left: 17%;
-
-}
-.main .bigimg .merc{
-	height: 300px;
-	width: 800px;
+.main-coneiner{
+	margin-top: 100px;
+	width: 100%;
+	height: 100%;
 }
 
 .h1{
+	color: #fff;
 	text-align: center;
 }
 
@@ -249,7 +239,6 @@ body {
 	border: 1px solid greenyellow;
 	width: 700px;
 	height: 250px;
-	background-color: green;
 
 }
 
@@ -262,7 +251,7 @@ body {
 	border: 1px solid greenyellow;
 	width: 700px;
 	height: 250px;
-	background-color: green;
+
 	box-shadow: 1px 2px 1px black;
 }
 
@@ -306,7 +295,32 @@ body {
 	color: #aaa;
 }
 
-.news-like-block{
+.user-likes {
+	display: flex;
+	align-items: end;
+	justify-content: flex-end;
+	width: 50px;
+	height: 30px;
+	border: 1px solid pink;
+	margin: 190px 90px;
+	padding: 2px 10px;
+	margin-top: 170px;
+}
+.user-likes:hover {
+  background: #f1f1f129;
+}
+.user-likes #icon {
+  margin-right: 0.01rem;
+}
+.user-likes #icon .vector._active {
+  fill: red;
+}
+.user-likes #likesCounter {
+  font-size: 1rem;
+}
+
+
+/* .news-like-block{
 	display: flex;
 	align-items: end;
 	justify-content: flex-end;
@@ -322,7 +336,7 @@ body {
 	width: 25px;
 	height: 25px;
 
-}
+} */
 
 .news-block-date-and-like{
 	display: grid;

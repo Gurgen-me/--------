@@ -212,19 +212,15 @@ body {
 
 
 .main .bigimg{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 390px;
-	width: 800px;
-	background-repeat: no-repeat;
-	padding-top: 100px;
-	margin: 80px 176px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 5%;
 
 }
 .main .bigimg .merc{
 	height: 390px;
-	width: 800px;
+	width: 600px;
 }
 
 .h1{
@@ -232,102 +228,19 @@ body {
 	padding-top: 50px;
 }
 
-.news-count{
-	margin: 50px 176px;
-	border: 1px solid red;
+.lorem{
 	width: 800px;
-	height: 100%;
-	background-color: #929292;
 }
-
-.news-block{
-	background-color: #3b3b3b;
-	display: grid;
-	grid-template-columns: 250px 250px;
-	grid-column-gap: 100px;
-	margin: 50px;
-	border: 1px solid greenyellow;
-	width: 700px;
-	height: 250px;
-	background-color: green;
-
-}
-
-.news-block:hover{
-	background-color: #3b3b3b;
-	display: grid;
-	grid-template-columns: 250px 250px;
-	grid-column-gap: 100px;
-	margin: 50px;
-	border: 1px solid greenyellow;
-	width: 700px;
-	height: 250px;
-	background-color: green;
-	box-shadow: 1px 2px 1px black;
-}
-
-.news-block-img{
-	margin: 0;
-	padding: 0;
-	width: 350px;
-	height: 248px;
-	border: 1px solid black;
-}
-
-.new{
-	width: 350px;
-	height: 248px;
-	border: 1px dashed white;
-}
-
-.news-info-block{
-	width: 350px;
-	height: 250px;
-}
-
-.news-block-h2{
-	margin: 10px 3px;
-	color: #fff;
-	border:1px solid #0c48db;
-}
-
-.news-block-span{
-	/* display: flex;
-	align-items: start;
-	justify-content: flex-start; */
-	border: 1px solid pink;
-	margin: 200px 20px;
-	margin-top: 170px;
-	width: 150px;
-	height: 26px;
-}
-
-.block-data{
-	color: #aaa;
-}
-
-.news-like-block{
+#h1{
 	display: flex;
-	align-items: end;
-	justify-content: flex-end;
-	width: 30px;
-	height: 26px;
-	border: 1px solid pink;
-	margin: 190px 90px;
-	margin-top: 170px;
+	align-items: center;
+	justify-content: center;
 }
-
-.like{
-	width: 25px;
-	height: 25px;
+.sparaying{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-
-.news-block-date-and-like{
-	display: grid;
-	grid-template-columns: 100px 100px;
-	grid-column-gap: 90px;
-}
-
 
 /* print text */
 /* Cursor */

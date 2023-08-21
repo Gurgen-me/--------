@@ -235,13 +235,29 @@ body {
 	padding-top: 50px;
 }
 
+#sort{
+	display: flex;
+	margin: 20px;
+	padding-left: 70%;
+	cursor: pointer;
+}
+
+.news-count-r{
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 .news-count{
+	display: flex;
+	flex-direction: column;
 	margin: 50px 176px;
 	border: 1px solid red;
 	width: 800px;
 	height: 100%;
 	background-color: #929292;
 }
+
+
 
 .news-block{
 	background-color: #3b3b3b;
@@ -252,7 +268,6 @@ body {
 	border: 1px solid greenyellow;
 	width: 700px;
 	height: 250px;
-	background-color: green;
 
 }
 
@@ -265,7 +280,6 @@ body {
 	border: 1px solid greenyellow;
 	width: 700px;
 	height: 250px;
-	background-color: green;
 	box-shadow: 1px 2px 1px black;
 }
 
