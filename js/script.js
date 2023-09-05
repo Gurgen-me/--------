@@ -38,3 +38,5 @@ sort.addEventListener("click",()=>{
     container.classList.toggle("news-count-r")
     container.classList.toggle("news-count")
 });
+
+

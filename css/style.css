@@ -221,8 +221,9 @@ body {
 	height: 400px;
 	width: 800px;
 	background-repeat: no-repeat;
-	padding-top: 100px;
-	margin: 80px 176px;
+	padding-top: 4px;
+	margin: 80px 392px;
+	border: 1px solid #d60b0b;
 
 }
 .main .bigimg .merc{
@@ -245,7 +246,7 @@ body {
 .news-count-r{
 	display: flex;
 	flex-direction: column-reverse;
-	margin: 50px 176px;
+	margin: 50px 392px;
 	/*  solid red; */
 	width: 800px;
 	height: 100%;
@@ -255,7 +256,7 @@ body {
 .news-count{
 	display: flex;
 	flex-direction: column;
-	margin: 50px 176px;
+	margin: 50px 392px;
 	/*  solid red; */
 	width: 800px;
 	height: 100%;
