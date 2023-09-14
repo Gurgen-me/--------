@@ -7,7 +7,6 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
 }
 :root {
 	font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
@@ -16,6 +15,9 @@
 	--bgh: #9E9E9E;
     --bg:#4D4D4D;
     --border: .1rem solid #433e3ecd;
+}
+body{
+	background: #4D4D4D;
 }
 /* style header */
 .header{
