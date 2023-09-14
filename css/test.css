@@ -1,4 +1,5 @@
 * {
+	border: 1px solid #ffffff !important;
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -15,17 +16,30 @@
 	--black: #13131a;
 	--bgh: #9E9E9E;
 	--bg: #4D4D4D;
+<<<<<<< HEAD
 	--border: .1rem solid #433e3ecd;
 }
 
 .wrapper {
 	margin-top: 100px;
+=======
+	/* --border: .1rem solid #433e3ecd; */
+}
+
+.wrapper {
+	padding: 10% 0%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: max-content;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	padding: 40px 0;
 }
+<<<<<<< HEAD
 
 html {
 	font-size: 62.5%;
@@ -49,7 +63,31 @@ html::-webkit-scrollbar-thumb {
 body,
 button,
 input {
+=======
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 
+html {
+	font-size: 62.5%;
+	scroll-padding-top: 9rem;
+	scroll-behavior: smooth;
+}
+
+html::-webit-scrollbar {
+	width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: .5rem;
+}
+
+body,
+button,
+input {
 	line-height: 1em;
 }
 
@@ -63,22 +101,36 @@ input {
 }
 
 body {
+
 	background: #2b2b2b;
+<<<<<<< HEAD
 	height: 100vh;
+=======
+	height: max-content;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	width: 100%;
 }
 
 /* style header */
+<<<<<<< HEAD
 header {
+=======
+.header {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	background: var(--bgh);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+<<<<<<< HEAD
 	padding: 0 7%;
+=======
+	padding: 0.1rem 7%;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	border-bottom: var(--border);
 	position: fixed;
 	top: 0;
 	left: 0;
+<<<<<<< HEAD
 	z-index: 1000;
 	width: 100%;
 	height: 100px;
@@ -89,24 +141,44 @@ header {
 }
 
 .navbar a {
+=======
+	right: 0;
+	z-index: 1000;
+}
+
+.header .logo img {
+	height: 3rem;
+}
+
+.header .navbar a {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	margin: 0 1rem;
 	font-size: 1rem;
 	color: #000000;
 }
 
+<<<<<<< HEAD
 .navbar a:hover {
+=======
+.header .navbar a:hover {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	color: #373535;
 	border-bottom: .1rem solid var(--main-color);
 	padding-bottom: .5rem;
 }
 
+<<<<<<< HEAD
 .icon div {
+=======
+.header .icon div {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
 	margin-left: 2rem;
 }
 
+<<<<<<< HEAD
 .icon div:hover {
 	color: var(--main-color);
 }
@@ -115,6 +187,18 @@ header {
 .burger {
 	width: 30px;
 	height: 30px;
+=======
+.header .icon div:hover {
+	color: var(--main-color);
+}
+
+#menu-btn {
+	display: none;
+}
+
+#menu-btn:hover {
+	color: var(--main-color);
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 }
 
 /* style search */
@@ -248,6 +332,7 @@ header {
 	transform: translateY(1px);
 }
 
+<<<<<<< HEAD
 
 
 .h1 {
@@ -272,10 +357,26 @@ header {
 	display: flex;
 	flex-direction: column-reverse;
 	width: 800px;
+=======
+.h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 800px;
+	margin-top: 20px;
+}
+
+.news-count {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	height: max-content;
 	background-color: #929292;
 }
 
+<<<<<<< HEAD
 .news-count {
 	margin-top: 20px;
 	display: flex;
@@ -290,6 +391,13 @@ header {
 }
 
 .news-block {
+=======
+.st{
+	display: flex;
+}
+
+ .news-block {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	background-color: #3b3b3b;
 	display: flex;
 	flex-direction: row;
@@ -327,6 +435,7 @@ header {
 .news-block-h2 {
 	padding-bottom: 170px;
 	color: #fff;
+<<<<<<< HEAD
 	border: 1px solid #0c48db;
 }
 
@@ -338,6 +447,18 @@ header {
 }
 
 .block-data {
+=======
+	border:1px solid #0c48db;
+} 
+
+ .news-block-span {
+	display: flex;
+	align-items: start;
+	justify-content: flex-start; 
+
+} 
+ .block-data {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	font-size: small;
 	color: #aaa;
 }
@@ -345,7 +466,11 @@ header {
 .user-likes {
 	display: flex;
 	position: relative;
+<<<<<<< HEAD
 	z-index: 3;
+=======
+	z-index: 1000000;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 }
 
 .user-likes:hover {
@@ -364,7 +489,11 @@ header {
 	font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .like {
+=======
+.like{
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	width: 25px;
 	height: 25px;
 }
@@ -377,9 +506,12 @@ header {
 	width: 350px;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 
 /* print text */
 /* Cursor */
@@ -409,9 +541,34 @@ header {
   to { border-right-color: transparent; }
 }
  */
+/* footer */
+footer {
+	background-color: #312D2D;
+	color: #4b4c4d;
+}
 
+.social a:hover {
+	opacity: 1;
+}
 
+ .social {
+	text-align: center;
+	padding: 25px;
+}
+.social>a {
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	margin: 0 8px;
+	color: inherit;
+	opacity: 0.75;
+}
 
+<<<<<<< HEAD
 /* style footer */
 
 footer {
@@ -445,6 +602,8 @@ footer {
 }
 
 
+=======
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 .copyright {
 	margin-top: 15px;
 	text-align: center;
@@ -468,8 +627,11 @@ footer {
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 @media (max-width:450px) {
 	html {
 		font-size: 50%;
@@ -478,14 +640,24 @@ footer {
 
 
 
+<<<<<<< HEAD
 
 @media (max-width:950px) {
 	.burger {
+=======
+/* media screen burger menu */
+@media (max-width:950px) {
+	#menu-btn {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		display: inline-block;
 
 	}
 
+<<<<<<< HEAD
 	.navbar {
+=======
+	.header .navbar {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -494,11 +666,19 @@ footer {
 		height: calc(100vh - 9.5rem);
 	}
 
+<<<<<<< HEAD
 	.active {
 		right: 0;
 	}
 
 	.navbar a {
+=======
+	.header .navbar.active {
+		right: 0;
+	}
+
+	.header .navbar a {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		color: #000000;
 		display: block;
 		margin: 1.5rem;

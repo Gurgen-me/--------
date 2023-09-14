@@ -1,4 +1,5 @@
 * {
+	border: 1px solid #ffffff !important;
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -69,7 +70,11 @@ body {
 }
 
 /* style header */
+<<<<<<< HEAD
 header {
+=======
+.header {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	background: var(--bgh);
 	display: flex;
 	justify-content: space-between;
@@ -83,16 +88,25 @@ header {
 	z-index: 1000;
 }
 
+<<<<<<< HEAD
 .logo img {
 	height: 3rem;
 }
 
 .navbar a {
+=======
+.header .logo img {
+	height: 3rem;
+}
+
+.header .navbar a {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	margin: 0 1rem;
 	font-size: 1rem;
 	color: #000000;
 }
 
+<<<<<<< HEAD
 .navbar a:hover {
 	color: #373535;
 	border-bottom: .1rem solid #d3ad7f;
@@ -100,14 +114,36 @@ header {
 }
 
 .icon div {
+=======
+.header .navbar a:hover {
+	color: #373535;
+	border-bottom: .1rem solid var(--main-color);
+	padding-bottom: .5rem;
+}
+
+.header .icon div {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
 	margin-left: 2rem;
 }
 
+<<<<<<< HEAD
 .icon div:hover {
 	color: #d3ad7f;
+=======
+.header .icon div:hover {
+	color: var(--main-color);
+}
+
+#menu-btn {
+	display: none;
+}
+
+#menu-btn:hover {
+	color: var(--main-color);
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 }
 
 /* style search */
@@ -241,6 +277,11 @@ header {
 	transform: translateY(1px);
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 .main-img {
 	width: 800px;
 	display: flex;
@@ -252,16 +293,24 @@ header {
 	height: 400px;
 	width: 800px;
 }
+<<<<<<< HEAD
 .burger{
 	display: none;
 }
 .h1 {
 	color: white;
+=======
+
+.h1 {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 800px;
+<<<<<<< HEAD
 	height: 100px;
+=======
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	margin-top: 20px;
 }
 
@@ -291,11 +340,19 @@ header {
 	background-color: #929292;
 }
 
+<<<<<<< HEAD
 .st {
 	display: flex;
 }
 
 .news-block {
+=======
+.st{
+	display: flex;
+}
+
+ .news-block {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	background-color: #3b3b3b;
 	display: flex;
 	flex-direction: row;
@@ -331,6 +388,7 @@ header {
 }
 
 .news-block-h2 {
+<<<<<<< HEAD
 	padding-bottom: 170px;
 	color: #fff;
 	border: 1px solid #0c48db;
@@ -344,6 +402,20 @@ header {
 }
 
 .block-data {
+=======
+	padding-bottom: 160px;
+	color: #fff;
+	border:1px solid #0c48db;
+} 
+
+ .news-block-span {
+	display: flex;
+	align-items: start;
+	justify-content: flex-start; 
+
+} 
+ .block-data {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	font-size: small;
 	color: #aaa;
 }
@@ -351,7 +423,11 @@ header {
 .user-likes {
 	display: flex;
 	position: relative;
+<<<<<<< HEAD
 	z-index: 3;
+=======
+	z-index: 1000000;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 }
 
 .user-likes:hover {
@@ -370,7 +446,11 @@ header {
 	font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .like {
+=======
+.like{
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 	width: 25px;
 	height: 25px;
 }
@@ -414,6 +494,7 @@ header {
  */
 /* footer */
 footer {
+<<<<<<< HEAD
 	background-color: #312D2D;
 	color: #4b4c4d;
 }
@@ -421,12 +502,24 @@ footer {
 .social {
 	text-align: center;
 	padding: 25px;
+=======
+
+	background-color: #312D2D;
+	color: #4b4c4d;
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 }
 
 .social a:hover {
 	opacity: 1;
 }
 
+<<<<<<< HEAD
+=======
+ .social {
+	text-align: center;
+	padding: 25px;
+}
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 .social>a {
 	font-size: 24px;
 	width: 40px;
@@ -457,6 +550,16 @@ footer {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 @media (max-width:450px) {
 	html {
 		font-size: 50%;
@@ -467,12 +570,20 @@ footer {
 
 /* media screen burger menu */
 @media (max-width:950px) {
+<<<<<<< HEAD
 	.burger{
+=======
+	#menu-btn {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		display: inline-block;
 
 	}
 
+<<<<<<< HEAD
 	.navbar {
+=======
+	.header .navbar {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -481,11 +592,19 @@ footer {
 		height: calc(100vh - 9.5rem);
 	}
 
+<<<<<<< HEAD
 	.active {
 		right: 0;
 	}
 
 	.navbar a {
+=======
+	.header .navbar.active {
+		right: 0;
+	}
+
+	.header .navbar a {
+>>>>>>> 1df4dd307a4e0367cddb0ddba605e9fb9f880a0f
 		color: #000000;
 		display: block;
 		margin: 1.5rem;
