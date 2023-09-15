@@ -112,8 +112,9 @@ header {
 }
 
 /* style burger menu */
-.burger{
-	display: none;
+.burger {
+	width: 30px;
+	height: 30px;
 }
 
 /* style search */
