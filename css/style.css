@@ -1,5 +1,4 @@
 * {
-	border: 1px solid #ffffff !important;
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -70,7 +69,7 @@ body {
 }
 
 /* style header */
-.header {
+header {
 	background: var(--bgh);
 	display: flex;
 	justify-content: space-between;
@@ -84,39 +83,31 @@ body {
 	z-index: 1000;
 }
 
-.header .logo img {
+.logo img {
 	height: 3rem;
 }
 
-.header .navbar a {
+.navbar a {
 	margin: 0 1rem;
 	font-size: 1rem;
 	color: #000000;
 }
 
-.header .navbar a:hover {
+.navbar a:hover {
 	color: #373535;
-	border-bottom: .1rem solid var(--main-color);
+	border-bottom: .1rem solid #d3ad7f;
 	padding-bottom: .5rem;
 }
 
-.header .icon div {
+.icon div {
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
 	margin-left: 2rem;
 }
 
-.header .icon div:hover {
-	color: var(--main-color);
-}
-
-#menu-btn {
-	display: none;
-}
-
-#menu-btn:hover {
-	color: var(--main-color);
+.icon div:hover {
+	color: #d3ad7f;
 }
 
 /* style search */
@@ -250,8 +241,6 @@ body {
 	transform: translateY(1px);
 }
 
-
-
 .main-img {
 	width: 800px;
 	display: flex;
@@ -263,12 +252,16 @@ body {
 	height: 400px;
 	width: 800px;
 }
-
+.burger{
+	display: none;
+}
 .h1 {
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 800px;
+	height: 100px;
 	margin-top: 20px;
 }
 
@@ -298,11 +291,11 @@ body {
 	background-color: #929292;
 }
 
-.st{
+.st {
 	display: flex;
 }
 
- .news-block {
+.news-block {
 	background-color: #3b3b3b;
 	display: flex;
 	flex-direction: row;
@@ -338,18 +331,19 @@ body {
 }
 
 .news-block-h2 {
-	padding-bottom: 160px;
+	padding-bottom: 170px;
 	color: #fff;
-	border:1px solid #0c48db;
-} 
+	border: 1px solid #0c48db;
+}
 
- .news-block-span {
+.news-block-span {
 	display: flex;
 	align-items: start;
-	justify-content: flex-start; 
+	justify-content: flex-start;
 
-} 
- .block-data {
+}
+
+.block-data {
 	font-size: small;
 	color: #aaa;
 }
@@ -357,7 +351,7 @@ body {
 .user-likes {
 	display: flex;
 	position: relative;
-	z-index: 1000000;
+	z-index: 3;
 }
 
 .user-likes:hover {
@@ -376,7 +370,7 @@ body {
 	font-size: 1rem;
 }
 
-.like{
+.like {
 	width: 25px;
 	height: 25px;
 }
@@ -420,19 +414,19 @@ body {
  */
 /* footer */
 footer {
-
 	background-color: #312D2D;
 	color: #4b4c4d;
+}
+
+.social {
+	text-align: center;
+	padding: 25px;
 }
 
 .social a:hover {
 	opacity: 1;
 }
 
- .social {
-	text-align: center;
-	padding: 25px;
-}
 .social>a {
 	font-size: 24px;
 	width: 40px;
@@ -463,13 +457,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
 @media (max-width:450px) {
 	html {
 		font-size: 50%;
@@ -480,12 +467,12 @@ footer {
 
 /* media screen burger menu */
 @media (max-width:950px) {
-	#menu-btn {
+	.burger{
 		display: inline-block;
 
 	}
 
-	.header .navbar {
+	.navbar {
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -494,11 +481,11 @@ footer {
 		height: calc(100vh - 9.5rem);
 	}
 
-	.header .navbar.active {
+	.active {
 		right: 0;
 	}
 
-	.header .navbar a {
+	.navbar a {
 		color: #000000;
 		display: block;
 		margin: 1.5rem;

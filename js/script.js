@@ -1,15 +1,15 @@
 // бургер меню
 let navbar = document.querySelector('.navbar');
 
-document.querySelector('#menu-btn').onclick = () =>{
+document.querySelector('.burger').addEventListener("click", () => {
     navbar.classList.toggle('active');
-}
+})
 
 
 // Лайки
 const likeBtn = document.querySelectorAll('.user-likes')
 
-for(let i = 0 ; i <likeBtn.length; i++){
+for (let i = 0; i < likeBtn.length; i++) {
     likeBtn[i].addEventListener('click', countLikes)
     function countLikes() {
         let count = 0
@@ -25,18 +25,16 @@ for(let i = 0 ; i <likeBtn.length; i++){
             likeToRed[i].classList.add('_active');
             countPlace[i].innerText = count
         }
-    }  
+    }
 }
 
 // Сортировка
 
 const container =
-document.querySelector('.news-count');
+    document.querySelector('.news-count');
 const sort = document.getElementById('sort');
 
-sort.addEventListener("click",()=>{
+sort.addEventListener("click", () => {
     container.classList.toggle("news-count-r")
     container.classList.toggle("news-count")
 });
-
-

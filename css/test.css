@@ -1,5 +1,4 @@
 * {
-	border: 1px solid #ffffff !important;
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
@@ -16,16 +15,16 @@
 	--black: #13131a;
 	--bgh: #9E9E9E;
 	--bg: #4D4D4D;
-	/* --border: .1rem solid #433e3ecd; */
+	--border: .1rem solid #433e3ecd;
 }
 
 .wrapper {
-	padding: 10% 0%;
+	margin-top: 100px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: max-content;
-	width: 100%;
+	padding: 40px 0;
 }
 
 html {
@@ -50,6 +49,7 @@ html::-webkit-scrollbar-thumb {
 body,
 button,
 input {
+
 	line-height: 1em;
 }
 
@@ -63,60 +63,57 @@ input {
 }
 
 body {
-
 	background: #2b2b2b;
-	height: max-content;
+	height: 100vh;
 	width: 100%;
 }
 
 /* style header */
-.header {
+header {
 	background: var(--bgh);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.1rem 7%;
+	padding: 0 7%;
 	border-bottom: var(--border);
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
 	z-index: 1000;
+	width: 100%;
+	height: 100px;
 }
 
-.header .logo img {
+.logo img {
 	height: 3rem;
 }
 
-.header .navbar a {
+.navbar a {
 	margin: 0 1rem;
 	font-size: 1rem;
 	color: #000000;
 }
 
-.header .navbar a:hover {
+.navbar a:hover {
 	color: #373535;
 	border-bottom: .1rem solid var(--main-color);
 	padding-bottom: .5rem;
 }
 
-.header .icon div {
+.icon div {
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.5rem;
 	margin-left: 2rem;
 }
 
-.header .icon div:hover {
+.icon div:hover {
 	color: var(--main-color);
 }
 
-#menu-btn {
+/* style burger menu */
+.burger{
 	display: none;
-}
-
-#menu-btn:hover {
-	color: var(--main-color);
 }
 
 /* style search */
@@ -250,12 +247,32 @@ body {
 	transform: translateY(1px);
 }
 
+
+
 .h1 {
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 800px;
 	margin-top: 20px;
+}
+
+#sort {
+	justify-content: end;
+	width: 800px;
+	display: flex;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.news-count-r {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column-reverse;
+	width: 800px;
+	height: max-content;
+	background-color: #929292;
 }
 
 .news-count {
@@ -267,11 +284,11 @@ body {
 	background-color: #929292;
 }
 
-.st{
+.st {
 	display: flex;
 }
 
- .news-block {
+.news-block {
 	background-color: #3b3b3b;
 	display: flex;
 	flex-direction: row;
@@ -309,16 +326,17 @@ body {
 .news-block-h2 {
 	padding-bottom: 170px;
 	color: #fff;
-	border:1px solid #0c48db;
-} 
+	border: 1px solid #0c48db;
+}
 
- .news-block-span {
+.news-block-span {
 	display: flex;
 	align-items: start;
-	justify-content: flex-start; 
+	justify-content: flex-start;
 
-} 
- .block-data {
+}
+
+.block-data {
 	font-size: small;
 	color: #aaa;
 }
@@ -326,7 +344,7 @@ body {
 .user-likes {
 	display: flex;
 	position: relative;
-	z-index: 1000000;
+	z-index: 3;
 }
 
 .user-likes:hover {
@@ -345,7 +363,7 @@ body {
 	font-size: 1rem;
 }
 
-.like{
+.like {
 	width: 25px;
 	height: 25px;
 }
@@ -357,6 +375,9 @@ body {
 	height: 30px;
 	width: 350px;
 }
+
+
+
 
 
 /* print text */
@@ -387,20 +408,28 @@ body {
   to { border-right-color: transparent; }
 }
  */
-/* footer */
+
+
+
+/* style footer */
+
 footer {
 	background-color: #312D2D;
 	color: #4b4c4d;
+	padding: 15px 0;
+	width: 100%;
+	height: 120px;
 }
 
 .social a:hover {
 	opacity: 1;
 }
 
- .social {
+.social {
 	text-align: center;
-	padding: 25px;
+	padding-bottom: 25px;
 }
+
 .social>a {
 	font-size: 24px;
 	width: 40px;
@@ -413,6 +442,7 @@ footer {
 	color: inherit;
 	opacity: 0.75;
 }
+
 
 .copyright {
 	margin-top: 15px;
@@ -437,6 +467,8 @@ footer {
 
 
 
+
+
 @media (max-width:450px) {
 	html {
 		font-size: 50%;
@@ -445,14 +477,14 @@ footer {
 
 
 
-/* media screen burger menu */
+
 @media (max-width:950px) {
-	#menu-btn {
+	.burger {
 		display: inline-block;
 
 	}
 
-	.header .navbar {
+	.navbar {
 		position: absolute;
 		top: 100%;
 		right: -100%;
@@ -461,11 +493,11 @@ footer {
 		height: calc(100vh - 9.5rem);
 	}
 
-	.header .navbar.active {
+	.active {
 		right: 0;
 	}
 
-	.header .navbar a {
+	.navbar a {
 		color: #000000;
 		display: block;
 		margin: 1.5rem;
