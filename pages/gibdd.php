@@ -4,42 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pdd.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" size="32x32" href="../img/icon.png">
     <title>CARNEWS</title>
 </head>
 
 <body>
-    <header>
-        <a href="../index.html" class="logo">
-            <img src="../img/logo.png" alt="logo">
-        </a>
-        <nav class="navbar">
-            <!-- Ссылки навбара -->
-            <a href="../html/gibdd.html">ГИБДД</a>
-            <a href="../html/test.html">Тест-драйвы</a>
-            <a href="../html/dtp.html">ДТП</a>
-            <a href="../html/pdd.html">ПДД</a>
-            <a href="../html/kredit.html">Кредит</a>
-        </nav>
-        <!-- Поиск -->
-        <div class="poisk">
-            <form action="" class="search-bar">
-                <label>
-                    <input type="search" name="search" pattern=".*\S.*" required class="inputText">
-                </label>
-                <button class="search-btn" type="submit">
-                    <span>Search</span>
-                </button>
-            </form>
-        </div>
-        <!-- Иконка бургер меню -->
-        <div class="burger">
-            <img src="../img/burger menu.png" alt="">
-        </div>
-    </header>
+    <?require_once "./components/header.php"?>
     <div class="wrapper">
-        <h1 class="h1">&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135; ГИБДД &#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;&#9135;</h1>
+        <h1 class="h1">ГИБДД</h1>
         <!-- Сортировка -->
         <div id="sort">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,21 +145,7 @@
 
     </div>
     <!-- footer -->
-    <footer>
-        <div class="social">
-            <a href="https://vk.com/gurgen_me"><i class="icon ion-social-vkontakte"><img src="../img/vk.png"
-                        alt="vk"></i></a>
-            <a href="https://github.com/Gurgen-me"><i class="icon ion-social-github"><img src="../img/github.png"
-                        alt="git"></i></i></a>
-            <a href="https://t.me/carnews93"><i class="icon ion-social-telegram"><img src="../img/tg.png"
-                        alt="tg"></i></a>
-            <a href="https://www.instagram.com/gurgen.me/"><i class="icon ion-social-instagram"><img
-                        src="../img/instagram.png" alt="inst"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100029114281798"><i class="icon ion-social-facebook"><img
-                        src="../img/facebook.png" alt="facebook"></i></a>
-        </div>
-        <p class="copyright">&copy; Melkonyan Gurgen 2023</p>
-    </footer>
+    <?require_once "./components/footer.php"?>
     <script src="../js/script.js"></script>
 </body>
 

@@ -1,11 +1,3 @@
-// бургер меню
-let navbar = document.querySelector('.navbar');
-
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-}
-
-
 // Функция для расчета ежемесячного платежа
 function calculatePayment() {
     // Получаем входные значения
