@@ -6,16 +6,18 @@
 }
 
 .merc {
-	height: 390px;
-	width: 600px;
+	height: 400px;
+	width: 800px;
 }
 
 .h1 {
 	text-align: center;
+	
 }
 
 #h1 {
 	text-align: center;
+	width: 90%;
 	color: #fff;
 }
 
@@ -24,4 +26,7 @@
 	align-items: center;
 	flex-direction: column;
 	color: #fff;
+}
+.disc{
+	width: 640px;
 }

@@ -7,7 +7,7 @@
 
 
 :root {
-	/* font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320)); */
+	font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
 	--main-color: #d3ad7f;
 	--black: #13131a;
 	--bgh: #9E9E9E;
@@ -16,6 +16,7 @@
 
 body {
 	background: #2b2b2b;
+	color: #000000;
 	height: max-content;
 	width: 100%;
 }
@@ -107,6 +108,7 @@ header {
 	display: flex;
 	align-items: center;
 	width: max-content;
+	cursor: pointer;
 	color: #fff;
 }
 
@@ -195,7 +197,7 @@ header {
 .user-likes {
 	display: flex;
 	position: relative;
-	z-index: 3;
+	z-index: 10000;
 }
 
 .user-likes:hover {
@@ -283,6 +285,7 @@ footer {
 	right: 30px;
 	top: 30px;
 	color: #fff;
+	cursor: pointer;
 }
 
 .form {
@@ -312,4 +315,5 @@ footer {
 	border-radius: 10px;
 	color: #fff;
 	margin-top: 30px;
+	cursor: pointer;
 }

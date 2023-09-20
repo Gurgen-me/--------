@@ -2,7 +2,8 @@
     <div class="popup-close" id="closeAdd">&#10006;</div>
     <form method="post" class="form" enctype="multipart/form-data">
         <input type="text" name="title" id="name" class="form-input" required placeholder="Заголовок статьи">
-        <textarea name="discription" id="textarea" cols="30" rows="10" class="form-input" required placeholder="Описание статьи"></textarea>
+        <textarea name="discription" id="textarea" cols="30" rows="10" class="form-input" required
+            placeholder="Описание статьи"></textarea>
         <input type="file" name="add_image" id="jvsdcs8cg" accept=".png,.jpg,.jpeg" required>
         <button type="submit" class="form-btn" id="changeBtn">Добавить запись</button>
     </form>

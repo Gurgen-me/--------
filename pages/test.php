@@ -5,7 +5,8 @@ require_once "./vendor/iniection.php";
 
 $allArticle = "SELECT * FROM posts";
 $resltAllArticle = mysqli_query($link, $allArticle) or die(mysqli_error($link));
-for ($mass = []; $row = mysqli_fetch_assoc($resltAllArticle); $mass[] = $row);
+for ($mass = []; $row = mysqli_fetch_assoc($resltAllArticle); $mass[] = $row)
+    ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,35 +51,39 @@ for ($mass = []; $row = mysqli_fetch_assoc($resltAllArticle); $mass[] = $row);
             <!-- блок новостей -->
             <? foreach ($mass as $elem) { ?>
                 <a style="text-decoration: none;" href="../articles/stat.php?id=<?= $elem['id'] ?>">
-                <div class="news-block">
-                    <div class="news-block-img">
-                        <img src="data:image/*;base64, <?= base64_encode($elem["image"]) ?>" alt="" class="new">
-                    </div>
-                    <div class="news-info-block">
-                        <div class="news-block-h2">
-                            <h2><?= $elem['post_name'] ?></h2>
+                    <div class="news-block">
+                        <div class="news-block-img">
+                            <img src="data:image/*;base64, <?= base64_encode($elem["image"]) ?>" alt="" class="new">
                         </div>
-                        <div class="news-block-date-and-like">
-                            <div class="news-block-span">
-                                <span class="block-data"><?= $elem["date"]?></span>
+                        <div class="news-info-block">
+                            <div class="news-block-h2">
+                                <h2>
+                                    <?= $elem['post_name'] ?>
+                                </h2>
                             </div>
-                            <div class="news-like-block">
-                                <div class="user-likes">
-                                    <svg width="25" height="25" viewBox="0 0 18 18" fill="red"
-                                        xmlns="http://www.w3.org/2000/svg" id="icon">
-                                        <g id="favorite">
-                                            <path id="Vector" class="vector"
-                                                d="M9 16.0125L7.9125 15.0225C4.05 11.52 1.5 9.21 1.5 6.375C1.5 4.065 3.315 2.25 5.625 2.25C6.93 2.25 8.1825 2.8575 9 3.8175C9.8175 2.8575 11.07 2.25 12.375 2.25C14.685 2.25 16.5 4.065 16.5 6.375C16.5 9.21 13.95 11.52 10.0875 15.03L9 16.0125Z"
-                                                fill="#A7A7A7" />
-                                        </g>
-                                    </svg>
-                                    <div class="likesCounter"></div>
+                            <div class="news-block-date-and-like">
+                                <div class="news-block-span">
+                                    <span class="block-data">
+                                        <?= $elem["date"] ?>
+                                    </span>
+                                </div>
+                                <div class="news-like-block">
+                                    <div class="user-likes">
+                                        <svg width="25" height="25" viewBox="0 0 18 18" fill="red"
+                                            xmlns="http://www.w3.org/2000/svg" id="icon">
+                                            <g id="favorite">
+                                                <path id="Vector" class="vector"
+                                                    d="M9 16.0125L7.9125 15.0225C4.05 11.52 1.5 9.21 1.5 6.375C1.5 4.065 3.315 2.25 5.625 2.25C6.93 2.25 8.1825 2.8575 9 3.8175C9.8175 2.8575 11.07 2.25 12.375 2.25C14.685 2.25 16.5 4.065 16.5 6.375C16.5 9.21 13.95 11.52 10.0875 15.03L9 16.0125Z"
+                                                    fill="#A7A7A7" />
+                                            </g>
+                                        </svg>
+                                        <div class="likesCounter"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                </a> 
+                </a>
             <? } ?>
         </div>
 

@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_error", "on");
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$link = mysqli_connect("localhost", "root", "", "car_news");
+$link = mysqli_connect("localhost", "root", "", "dtp");
 if (!$link) {
     die();
 }
@@ -10,7 +10,7 @@ if (!$link) {
 
 $id = mysqli_real_escape_string($link, $_GET['id']);
 
-$allArticle = "SELECT * FROM posts";
+$allArticle = "SELECT * FROM dtp_posts";
 $resltAllArticle = mysqli_query($link, $allArticle) or die(mysqli_error($link));
 for ($mass = []; $row = mysqli_fetch_assoc($resltAllArticle); $mass[] = $row);
 ?>
